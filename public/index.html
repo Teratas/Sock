@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./js/main.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main_container">
+        <div class="introduction_page">
+            <div class="introduction_page_box">
+                <input type="text" class="introduction_page_name_input" placeholder="Enter Your Name..">
+                <select class="introduction_page_room_select" id="room_select">
+                    <option value="cars">Car</option>
+                    <option value="motorbikes">Motorbikes</option>
+                    <option value="trucks">Trucks</option>
+                </select>
+                <button class="introduction_page_enter_chat_button" id="enter_chats_button">Enter Chat Page</button>
+            
+            </div>
+        </div>
+        <div class="chat_page display_none">
+            <p class="username_label"></p>
+            <div class="chatboxes_container">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
